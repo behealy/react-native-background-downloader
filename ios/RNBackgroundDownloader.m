@@ -80,7 +80,7 @@ RCT_EXPORT_MODULE();
 
 - (void)lazyInitSession {
     if (urlSession == nil) {
-        urlSession = [NSURLSession sessionWithConfiguration:sessionConfig delegate:self delegateQueue:downloadOperationsQueue];
+        urlSession = [NSURLSession sessionWithConfiguration:sessionConfig delegate:self delegateQueue:nil];
     }
 }
 
